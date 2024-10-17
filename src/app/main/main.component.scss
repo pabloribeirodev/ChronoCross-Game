@@ -1,9 +1,67 @@
+.editions {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 44px;
+   
+  }
+
+  .text-classic{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 44px;
+        background-color: rgba(28, 35, 49, 0.1764705882);
+        margin: 0;
+       
+       
+  }
+  
+.container-fluid{
+    width: 100%;
+    
+}
+
+  .card-selling{
+    padding-bottom: 40px;
+  }
+
+  .image-gallery {
+    width: 100%;   
+    background-size: cover; 
+    background-position: center center;    /* Ocupa toda a largura disponível */
+       /* Espaçamento vertical */
+       
+  }
+  
+  .image-gallery img {
+    background-size: cover;
+    width: 100%;        /* Imagens ocupam a coluna inteira */
+    height: 100;       /* Mantém a proporção da imagem */
+  }
+  
+
 .card{
     background-color: #1c2331;
     color: white;
+    
 }
 
 .btn{
     background-color: #6351ce;
     border-color: #6351ce;;
+    width: 90px;
+    height: 38px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgba(99, 81, 206, 0.7); 
+    border-color: rgba(99, 81, 206, 0.7);
+}
+
+.card-selling{
+    background-color: #1c23312d;
+    // --bs-bg-opacity: 1;
+    // background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
 }

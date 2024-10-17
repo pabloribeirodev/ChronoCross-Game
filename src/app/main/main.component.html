@@ -2,7 +2,7 @@
     <img class="w-100" [src]="imagemPath" alt="Imagem Principal">
   </div> -->
 
-  <div [ngStyle]="{
+<div [ngStyle]="{
     'background-image': 'url(' + imagemPath + ')',
     'background-size': 'cover',
     'background-position': 'center',
@@ -11,24 +11,66 @@
     'box-shadow': 'inset 230px -30px 150px rgba(0, 0, 0, 0.5)' 
   }">
 
-<div class="container h-100 d-flex justify-content-center align-items-center">
-    <div class="row" >
-        @for (produto of produtos; track produto.id) {
-            <div class="card col-6 m-4 p-0" style="width: 24rem;">
-                <img class="card-img-top" [src]="produto.imagem" alt="Card image cap">
-                <div class="card-body ">
-                  <h5 class="card-title">{{produto.nome}}</h5>
-                  <p class="card-text">{{produto.preco | currency:'BRL':'symbol':'1.2-2'}}</p>
-                  <a href="#" class="btn btn-primary">Comprar</a>
-                </div>
-              </div>
-        } @empty {
-        Nenhum registro encontrado.
-        }
-    </div>
 </div>
-   
-</div>
-  
 
-  
+<section class="card-selling">
+  <h2 class="editions">Edições</h2>
+  <div class="container h-100 d-flex justify-content-center align-items-center">
+    <div class="row">
+      @for (produto of produtos; track produto.id) {
+      <div class="card col-6 m-4 p-0" style="width: 24rem;">
+        <img class="card-img-top" [src]="produto.imagem" alt="Card image cap">
+        <div class="card-body ">
+          <h5 class="card-title">{{produto.nome}}</h5>
+          <p class="card-text">{{produto.preco | currency:'BRL':'symbol':'1.2-2'}}</p>
+          <p class="gratuito">{{produto.gratuito}}</p>
+          <p class="card-description">{{produto.descricao}}</p>
+
+          <!-- <a href="#" class="btn btn-primary">{{produto.comprar}}</a>
+                  <a href="#" class="btn btn-download">{{produto.baixar}}</a> -->
+          <a *ngIf="produto.comprar" href="#" class="btn btn-primary">
+            Comprar
+          </a>
+          <a *ngIf="produto.baixar" href="#" class="btn btn-success">
+            Baixar
+          </a>
+        </div>
+      </div>
+      } @empty {
+      Nenhum registro encontrado.
+      }
+    </div>
+  </div>
+  <h2 class="editions">Gráficos Remasterizados</h2>
+</section>
+
+<section class="image-gallery">
+  <div class="container-fluid row g-0 ">
+    <div class="col-4">
+      <img src="https://assetsio.gnwcdn.com/chrono-cross-the-radical-dreamers-edition-a.jpg?width=1600&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp" class="img-fluid" alt="Imagem 1" />
+    </div>
+    <div class="col-4">
+      <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1252600/ss_147d023c784309c0183e296def5b39d87b0bb3da.1920x1080.jpg?t=1726803107" class="img-fluid" alt="Imagem 2" />
+    </div>
+    <div class="col-4">
+      <img src="https://cdn.mos.cms.futurecdn.net/NFwYhuHtfidyQD6mBCQXkB-1200-80.jpg" class="img-fluid" alt="Imagem 3" />
+    </div>
+  </div>
+
+  <h2 class="text-classic">Um verdadeiro classico</h2>
+</section>
+
+
+
+<div [ngStyle]="{
+  'background-image': 'url(' + imageDescp + ')',
+  'background-size': 'cover',
+  'background-position': 'center',
+  'width': '100%',
+  'height': '780px',
+  'box-shadow': 'inset 230px -30px 150px rgba(0, 0, 0, 0.5)' 
+}">
+</div>
+
+
+
