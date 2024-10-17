@@ -11,7 +11,9 @@ import { CommonModule } from '@angular/common';
 export class MainComponent {
   imagemPath: string = 'https://www.omegascopio.com.br/wp-content/uploads/2021/12/maxresdefault.jpg';
 
-  imageDescp: string = 'https://i0.wp.com/ovicio.com.br/wp-content/uploads/2021/12/20211204-20211204_092226.jpg?fit=1200%2C630&ssl=1'
+  // imageDescp: string = 'https://i0.wp.com/ovicio.com.br/wp-content/uploads/2021/12/20211204-20211204_092226.jpg?fit=1200%2C630&ssl=1'
+
+  imageDescp: string = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjw7qAvONY2unv0MWNM-LGIXJ9FMqvzcdfp80T3_2v8JMrDyF8dAgkgPinOnEdgpc6IdFlBRzriLnW9QLwWBv0-HNvq44ahfOIegtC42AvFSL4apD_PCPU_wbIjunKp6CYeZjcDVtgm877hr9gS8V69FPbZfB4z2HjzR0seC55RAPCX2NIq4FD7LCkYew/s3030/chrono-cross-radical-dreamers-edition-capa.jpg'
 
   produtos = [
     {
