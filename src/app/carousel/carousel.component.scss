@@ -1,0 +1,99 @@
+
+
+.pers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c2331;
+    
+}
+
+.pers-titulo{
+text-align: center;
+padding-top: 40px;
+padding-bottom: 40px;
+color: #E3DDA4;
+font-size: 50px;
+font-family: "Cinzel", serif;
+line-height: 1.2;
+margin-top: 40px;
+text-align: center;
+text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4), 1px -1px 6px rgba(0, 0, 0, 0.4), -1px 1px 6px rgba(0, 0, 0, 0.4), -1px -1px 6px rgba(0, 0, 0, 0.4);
+// background-color: #6351ce;
+background-color: #1c2331;
+margin: 0;
+}
+
+.modal-desc{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.pers-desc{
+    width: 700px;
+    height: 150px;
+    background-color: #1c2331;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.9); 
+    position: absolute;
+    top: 405%;
+}
+
+.pers-nome{
+    color: #E3DDA4;
+    padding-top: 20px;
+    font-size: 40px;
+    font-family: "Cinzel", serif;
+    text-align: center;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4), 1px -1px 6px rgba(0, 0, 0, 0.4), -1px 1px 6px rgba(0, 0, 0, 0.4), -1px -1px 6px rgba(0, 0, 0, 0.4);
+}
+
+.texto-pers{
+    color: white;
+    font-family: "Noto Sans", sans-serif;
+    text-align: center;
+    
+}
+.carousel{
+    display: flex;
+    width: 1000px;
+    height: 600px;
+    position: relative;
+
+}
+
+.carousel img{
+    
+    width: 1000px;
+    height: 600px;
+
+}
+
+.carousel-control-prev, 
+.carousel-control-next {
+  top: 50%; /* Ajuste conforme necessário */
+  transform: translateY(-50%); /* Centraliza verticalmente */
+  width: 15%; /* Opcional: Ajusta a largura do ícone */
+}
+
+/* Ajusta a posição das setas */
+.carousel-control-prev {
+  left: -100px; /* Afasta a seta anterior para a esquerda */
+}
+
+.carousel-control-next {
+  right: -100px; /* Afasta a seta seguinte para a direita */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 40px 40px; /* Tamanho maior das setas */
+}
+
+
+
+  
+
+
+
+

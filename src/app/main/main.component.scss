@@ -1,16 +1,27 @@
 .editions {
-    text-align: center;
-    padding-top: 40px;
-    font-size: 44px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  color: #E3DDA4;
+  font-size: 60px;
+  font-family: "Cinzel", serif;
+  line-height: 1.2;
+  margin-top: 40px;
+  text-align: center;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4), 1px -1px 6px rgba(0, 0, 0, 0.4), -1px 1px 6px rgba(0, 0, 0, 0.4), -1px -1px 6px rgba(0, 0, 0, 0.4);
+  // background-color: #6351ce;
+  background-color: #1c2331;
+  margin: 0;
    
   }
-
+  
   .text-classic{
     text-align: center;
     padding-top: 40px;
     padding-bottom: 40px;
-    font-size: 44px;
+    font-size: 50px;
         background-color: rgba(28, 35, 49, 0.1764705882);
+        
         margin: 0;
        
        
@@ -22,7 +33,12 @@
 }
 
   .card-selling{
+    padding-top: 40PX;
     padding-bottom: 40px;
+    background-color: #1c23312d;
+    
+    // --bs-bg-opacity: 1;
+    // background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
   }
 
   .image-gallery {
@@ -60,12 +76,6 @@
     border-color: rgba(99, 81, 206, 0.7);
 }
 
-.card-selling{
-    background-color: #1c23312d;
-    // --bs-bg-opacity: 1;
-    // background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
-}
-
 .overlay-text {
   position: absolute;
   top: 40%; /* Centraliza verticalmente */
@@ -98,4 +108,20 @@
     text-align: center;
     text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4), 1px -1px 6px rgba(0, 0, 0, 0.4), -1px 1px 6px rgba(0, 0, 0, 0.4), -1px -1px 6px rgba(0, 0, 0, 0.4);
 }
+
+.fotos{
+  text-align: center;
+padding-top: 20px;
+padding-bottom: 30px;
+color: #E3DDA4;
+font-size: 50px;
+font-family: "Cinzel", serif;
+text-align: center;
+text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4), 1px -1px 6px rgba(0, 0, 0, 0.4), -1px 1px 6px rgba(0, 0, 0, 0.4), -1px -1px 6px rgba(0, 0, 0, 0.4);
+// background-color: #6351ce;
+background-color: #1c2331;
+margin: 0;
+
+}
+
 
